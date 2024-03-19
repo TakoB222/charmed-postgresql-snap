@@ -38,6 +38,8 @@ package-repositories:
     ppa: data-platform/pgvector
   - type: apt
     ppa: data-platform/python-pysyncobj
+  - type: apt
+    ppa: yevss/postgresql-14-timescaledb
 
 layout:
   /usr/lib/python3/dist-packages:
@@ -243,6 +245,7 @@ parts:
       - postgresql-14-postgis-3
       - postgresql-14-postgis-3-scripts
       - postgresql-14-pgvector
+      - postgresql-14-timescaledb
     organize:
       usr/share/doc/postgresql/copyright: licenses/COPYRIGHT-postgresql
       usr/share/doc/util-linux/copyright: licenses/COPYRIGHT-util-linux
